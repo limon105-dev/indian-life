@@ -133,33 +133,33 @@ h6 {
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 64px;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h3 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h4 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h5 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h6 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p {
@@ -239,10 +239,12 @@ button {
     transition: ease .3s;
     font-family: var(--paragraph-font);
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
     z-index: 1;
     text-decoration: none;
     cursor: pointer;
+    align-items: center;
+    gap: 8px;
 }
 
 .btn:hover {
@@ -300,6 +302,10 @@ button {
 
 .secondary-btn:hover {
     color: var(--white);
+}
+
+.secondary-btn:hover svg path {
+    stroke: var(--white);
 }
 
 .secondary-btn:active {
@@ -433,7 +439,6 @@ button {
     transition: ease .3s;
     width: 100%;
     z-index: 999;
-    background-color: var(--black);
 }
 
 .navbar-color.color-black {
@@ -619,7 +624,7 @@ button {
 }
 
 .megamenu-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
