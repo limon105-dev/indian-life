@@ -165,26 +165,21 @@ var swiper2 = new Swiper(".product-slider", {
 });
 // product-slider js end---
 
-// related-product slider js start--
-var swiper = new Swiper(".related-product-slider", {
-	slidesPerView: 4,
-	spaceBetween: 30,
+// img-slider js start--
+var swiper = new Swiper(".img-slider", {
+	slidesPerView: 3.5,
+	spaceBetween: 16,
 	grabCursor: true,
-	loop: false,
-	speed: 1000,
+	loop: true,
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".img-slider-pagination",
 		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
 		// when window width is >= 320px
 		1: {
 			spaceBetween: 10,
-			slidesPerView: 2,
+			slidesPerView: 1.5,
 		},
 		// when window width is >= 576px
 		576: {
@@ -193,14 +188,14 @@ var swiper = new Swiper(".related-product-slider", {
 		},
 		// when window width is >= 767px
 		768: {
-			spaceBetween: 20,
-			slidesPerView: 3.4,
+			spaceBetween: 10,
+			slidesPerView: 3,
 		},
 		// when window width is >= 767px
 		993: {
-			spaceBetween: 30,
-			slidesPerView: 4,
+			spaceBetween: 16,
+			slidesPerView: 3.5,
 		}
 	}
 });
-// related-product slider js end--
+// img-slider js end--

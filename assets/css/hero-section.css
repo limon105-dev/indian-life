@@ -18,15 +18,17 @@
 }
 
 .hero-section-content {
-    max-width: 510px;
+    max-width: 491px;
     width: 100%;
+    margin: 0 0 120px 0;
 }
 
-.hero-content-heading{
+.hero-content-heading {
     color: var(--white);
+    letter-spacing: -1px;
 }
 
-.hero-content-text{
+.hero-content-text {
     color: var(--white);
     font-size: 18px;
     margin: 16px 0 0 0;
@@ -38,9 +40,108 @@
     gap: 16px;
 }
 
-.hero-content-btn .secondary-btn:nth-child(2){
+.hero-content-btn .secondary-btn:nth-child(2) {
     background-color: transparent;
     border: 1px solid var(--white);
     color: var(--white);
 }
+
+.hero-content-btn .secondary-btn:nth-child(2):hover {
+    border: 1px solid var(--brand-color);
+}
+
+.hero-section-product {
+    margin: 0 0 40px 0;
+}
+
+.hero-section-product-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.hero-section-product-item .product-card {
+    backdrop-filter: blur(136px);
+    background: rgba(255, 255, 255, 0.102);
+}
+
+.hero-section-product-item .product-card .card-content {
+    padding: 0 24px 24px 24px;
+}
+
+.hero-section-product-item .product-card .card-content .card-title {
+    color: var(--white);
+}
+
+.hero-section-product-item .product-card .card-content .product-card-description {
+    color: var(--white);
+}
+
+.hero-section-product-item .product-card .card-content .card-btn a {
+    color: var(--white);
+}
+
+.hero-section-product-item .product-card .card-content .card-btn a svg path {
+    stroke: var(--white);
+}
+
 /* hero section css end */
+
+@media only screen and (max-width:992px) {
+
+    /* hero section css start */
+    .hero-section-product-items {
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .hero-section-product-item {
+        min-width: 290px;
+    }
+
+    /* hero section css end */
+}
+
+@media only screen and (max-width:992px) {
+
+    /* hero section css start */
+    .hero-section-product-item {
+        min-width: 290px;
+    }
+
+    /* hero section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* hero section css start */
+    .hero-section {
+        height: 820px;
+    }
+
+    .hero-section-content {
+        margin: 0 0 60px 0;
+        text-align: center;
+    }
+
+    .hero-content-text {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+
+    .hero-content-btn {
+        margin: 16px 0 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section-product-item {
+        min-width: 240px;
+    }
+
+    .hero-section-product-item .product-card .card-content {
+        padding: 0 16px 16px 16px;
+    }
+
+    /* hero section css end */
+}

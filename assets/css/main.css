@@ -73,6 +73,7 @@
     --white: #F2F1ED;
     --heading-text-color: #161616;
     --paragraph-text-color: #161616;
+    --text-alert: #B38F6F;
     --brand-color: #710014;
     --border-color: #B38F6F;
     --border-color2: #161616;
@@ -101,6 +102,7 @@ body {
     scroll-behavior: smooth;
     font-family: var(--paragraph-font);
     transition: all ease .7s;
+    background-color: var(--body-color);
 }
 
 body.active {
@@ -138,27 +140,27 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 28px;
-    font-weight: 400;
-}
-
-h5 {
     font-size: 24px;
     font-weight: 400;
 }
 
-h6 {
+h5 {
     font-size: 20px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -235,7 +237,7 @@ button {
 .btn {
     font-size: 16px;
     font-weight: 400;
-    padding: 15px 24px;
+    padding: 12.5px 24px;
     transition: ease .3s;
     font-family: var(--paragraph-font);
     text-align: center;
@@ -316,56 +318,50 @@ button {
 
 /* section heading css start */
 .section-heading-wrapper {
-    margin-bottom: 50px;
     text-align: center;
+    margin: 0 0 64px 0;
 }
 
 .section-heading {
     color: var(--heading-text-color);
-    text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
 .section-heading-text {
     color: var(--paragraph-text-color);
-    padding: 5px 0 0 0;
-    max-width: 600px;
+    font-size: 18px;
+    padding: 24px 0 0 0;
+    max-width: 543px;
+    margin: 0 auto;
+}
+
+.section-heading-sub-text {
+    color: var(--paragraph-text-color);
+    padding: 8px 0 0 0;
+    max-width: 543px;
     margin: 0 auto;
 }
 
 .section-btn {
     display: flex;
     justify-content: center;
-    margin: 50px 0 0 0;
+    margin: 32px 0 0 0;
 }
 
 /* section heading css end */
 
 /* swiper pagination and button css start */
 .swiper-pagination .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    border: 1px solid var(--border-color2);
+    width: 10px;
+    height: 10px;
+    background-color: rgba(113, 0, 21, 0.2);
     position: relative;
     opacity: 1;
 }
 
-.swiper-pagination .swiper-pagination-bullet::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 9px;
-    height: 9px;
-    border-radius: 100%;
-    background-color: var(--btn-bg);
-    transition: ease .5s;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active.swiper-pagination-bullet::after {
-    transform: translate(-50%, -50%) scale(1);
+.swiper-pagination .swiper-pagination-bullet-active.swiper-pagination-bullet {
+    background-color: #710014;
 }
 
 .swiper-button-prev,
@@ -529,7 +525,7 @@ button {
 
 .nav-links ul {
     display: flex;
-    gap: 30px;
+    gap: 48px;
 }
 
 .sub-menu ul {
@@ -625,6 +621,7 @@ button {
 
 .megamenu-wrapper {
     position: fixed;
+    z-index: 9;
     top: 0;
     left: 0;
     width: 100vw;
@@ -782,16 +779,8 @@ button {
 @media only screen and (max-width: 992px) {
 
     /* common css start */
-    .section-btn {
-        margin: 35px 0 0 0;
-    }
-
     .section {
         padding: 60px 0;
-    }
-
-    .section-heading-wrapper {
-        margin-bottom: 35px;
     }
 
     /* common css end */
@@ -980,15 +969,23 @@ button {
     }
 
     h2 {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     h3 {
         font-size: 28px;
     }
 
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
     h6 {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     p {
@@ -1005,8 +1002,14 @@ button {
         margin: 25px 0 0 0;
     }
 
-    .section-heading-wrapper {
+    .section-heading-wrapper,
+    .collection-heading-wrapper{
         margin-bottom: 25px;
+    }
+
+    .section-heading-text {
+        font-size: 16px;
+        padding: 16px 0 0 0;
     }
 
     /* common css end */
@@ -1036,19 +1039,15 @@ button {
 
     /* common css start */
     h1 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 22px;
-    }
-
-    h6 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .section {
@@ -1056,21 +1055,24 @@ button {
     }
 
     .btn {
-        padding: 12px 24px;
+        padding: 10px 20px;
+        font-size: 14px;
     }
 
-    .section-heading-wrapper {
+    .section-heading-wrapper,
+    .collection-heading-wrapper {
         margin-bottom: 20px;
     }
 
-    .section-heading {
-        font-weight: 400;
+    .section-heading-text {
+        font-size: 14px;
+        padding: 10px 0 0 0;
     }
 
     /* pagination css start */
     .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
     }
 
     .swiper-pagination .swiper-pagination-bullet::after {

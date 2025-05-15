@@ -1,0 +1,83 @@
+/* icon-item-section css start */
+.icon-item-section .section-heading-text {
+    font-weight: 500;
+}
+
+.icon-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 80px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.icon-item {
+    max-width: 336px;
+    width: 100%;
+    padding: 39px 32px;
+    text-align: center;
+}
+
+.icon-item:nth-child(2) {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.icon-item-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-item-title {
+    margin: 24px 0 0 0;
+    letter-spacing: -1px;
+}
+
+.icon-item-text {
+    margin: 16px 0 0 0;
+}
+
+/* icon-item-section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* icon-item-section css start */
+    .icon-items {
+        padding: 0 0 30px 0;
+    }
+
+    .icon-item {
+        padding: 25px 16px;
+    }
+
+    .icon-item-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-item-title {
+        margin: 16px 0 0 0;
+    }
+
+    .icon-item-text {
+        margin: 10px 0 0 0;
+    }
+
+    /* icon-item-section css end */
+}
+
+@media only screen and (max-width:575px) {
+
+    /* icon-item-section css start */
+    .icon-items {
+        flex-wrap: wrap;
+        padding: 0 0 10px 0;
+    }
+
+    .icon-item {
+        padding: 16px 16px;
+    }
+
+    /* icon-item-section css end */
+}
