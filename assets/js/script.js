@@ -32,7 +32,6 @@ $(document).ready(function () {
 			event.stopPropagation();
 			$(this).toggleClass('active');
 			$(".megamenu-wrapper").toggleClass('active');
-			$("body").toggleClass('active');
 		});
 	}
 	// megamenu js end...
