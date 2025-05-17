@@ -81,6 +81,7 @@
     --btn-color: #F2F1ED;
     --btn-bg: #710014;
     --body-color: #F2F1ED;
+    --label-color: #EDF7EE;
 
     /* font family */
     --heading-font: "Gelasio", serif;
@@ -191,11 +192,20 @@ img {
 }
 
 /* input css start */
+label {
+    color: var(--label-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: var(--paragraph-font);
+    display: block;
+}
+
 input,
 textarea,
 select {
     color: var(--paragraph-text-color);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     font-family: var(--paragraph-font);
     outline: none;
@@ -205,6 +215,8 @@ select {
     appearance: none;
     -moz-appearance: textfield;
     -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
     /* Firefox */
 }
 
@@ -212,6 +224,7 @@ input::placeholder,
 textarea::placeholder,
 select::placeholder {
     color: var(--paragraph-text-color);
+    font-size: 14px;
 }
 
 input::-webkit-outer-spin-button,
@@ -296,6 +309,7 @@ button {
     position: relative;
     overflow: hidden;
     background-color: var(--white);
+    border: 1px solid var(--black);
 }
 
 .secondary-btn span {
@@ -304,6 +318,7 @@ button {
 
 .secondary-btn:hover {
     color: var(--white);
+    border: 1px solid var(--btn-bg);
 }
 
 .secondary-btn:hover svg path {
@@ -346,7 +361,7 @@ button {
 .section-btn {
     display: flex;
     justify-content: center;
-    margin: 32px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 /* section heading css end */
@@ -361,7 +376,7 @@ button {
 }
 
 .swiper-pagination .swiper-pagination-bullet-active.swiper-pagination-bullet {
-    background-color: #710014;
+    background-color: var(--brand-color);
 }
 
 .swiper-button-prev,
@@ -773,6 +788,131 @@ button {
 /* navbar section css end */
 
 /* footer-section css start */
+.footer-section {
+    background-color: var(--black);
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 48px 0;
+}
+
+.footer-item {
+    width: fit-content;
+}
+
+.footer-item:first-child {
+    max-width: 560px;
+}
+
+.footer-logo {
+    max-width: 186px;
+    width: 100%;
+    display: block;
+}
+
+.footer-item-text {
+    margin: 24px 0 0 0;
+    color: var(--white);
+}
+
+.footer-newsletter {
+    margin: 24px 0 0 0;
+}
+
+.footer-newsletter-filed-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-newsletter-filed {
+    width: 75%;
+    height: 48px;
+}
+
+.footer-newsletter-filed input {
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
+
+.footer-newsletter-filed input::placeholder {
+    color: var(--white);
+}
+
+.footer-newsletter-text {
+    color: var(--white);
+    margin: 12px 0 0 0;
+    max-width: 379px;
+    font-size: 12px;
+}
+
+.footer-newsletter-text a {
+    color: var(--white);
+}
+
+.footer-newsletter-text a:hover {
+    text-decoration: underline;
+}
+
+.footer-item-title {
+    text-transform: capitalize;
+    margin: 0 0 24px 0;
+    color: var(--white);
+}
+
+.footer-item ul li {
+    margin: 0 0 16px 0;
+}
+
+.footer-item ul li:last-child {
+    margin: 0;
+}
+
+.footer-item ul li a {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 12px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--paragraph-font);
+}
+
+.footer-item ul li a:hover {
+    text-decoration: underline;
+}
+
+.copy-right-area {
+    padding: 32px 0 0 0;
+    border-top: 1px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.copy-right-text {
+    font-size: 14px;
+    color: var(--white);
+}
+
+.copy-right-links ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.copy-right-links ul li a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--paragraph-font);
+    text-decoration: underline;
+}
 
 /* footer-section css end */
 
@@ -956,6 +1096,9 @@ button {
     /* navbar css end */
 
     /* footer-section css start */
+    .footer-item:first-child {
+        min-width: 325px;
+    }
 
     /* footer-section css end */
 
@@ -1003,7 +1146,7 @@ button {
     }
 
     .section-heading-wrapper,
-    .collection-heading-wrapper{
+    .collection-heading-wrapper {
         margin-bottom: 25px;
     }
 
@@ -1030,7 +1173,22 @@ button {
     /* navbar section css end */
 
     /* footer section css start */
+    .footer-items {
+        flex-wrap: wrap;
+        padding: 0 0 30px 0;
+    }
 
+    .footer-item:first-child {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .copy-right-area {
+        flex-wrap: wrap;
+        padding: 30px 0 0 0;
+        justify-content: center;
+        gap: 16px;
+    }
 
     /* footer section css end */
 }
@@ -1048,6 +1206,10 @@ button {
 
     h3 {
         font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
     }
 
     .section {
@@ -1096,6 +1258,42 @@ button {
     /* common css end */
 
     /* footer section css start */
+    .footer-items {
+        padding: 0 0 20px 0;
+        gap: 16px;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .footer-item-text {
+        margin: 16px 0 0 0;
+    }
+
+    .footer-newsletter {
+        margin: 16px 0 0 0;
+    }
+
+    .footer-newsletter-filed {
+        width: 64%;
+        height: 40px;
+    }
+
+    .footer-item-title {
+        margin: 0 0 16px 0;
+        font-size: 16px;
+    }
+
+    .copy-right-area {
+        padding: 20px 0 0 0;
+        gap: 10px;
+    }
+
+    .copy-right-links ul {
+        gap: 14px;
+    }
 
     /* footer section css end */
 }

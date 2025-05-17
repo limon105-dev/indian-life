@@ -198,3 +198,16 @@ var swiper = new Swiper(".img-slider", {
 	}
 });
 // img-slider js end--
+
+// img-slider js start--
+var swiper = new Swiper(".testimonial-slider", {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	grabCursor: true,
+	loop: true,
+	pagination: {
+		el: ".testimonial-pagination",
+		clickable: true,
+	},
+});
+// img-slider js end--
