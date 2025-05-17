@@ -1,33 +1,50 @@
 .breadcrumb {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    column-gap: 14px;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 .breadcrumb li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
 }
 
 .breadcrumb li a,
 .breadcrumb li span {
-    color: var(--white);
-    font-size: 16px;
+    color: var(--paragraph-text-color);
+    font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    font-family: var(--paragraph-font);
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
 }
 
 .breadcrumb li .active {
-text-decoration: underline;
-}
-
-.breadcrumb li .breadcrumb-icon i {
-    color: var(--white);
-    font-size: 14px;
+    text-decoration: underline;
 }
 
 .breadcrumb li:last-child .breadcrumb-icon {
     display: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .breadcrumb {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    .breadcrumb li {
+        gap: 5px;
+    }
+
+    .breadcrumb li a,
+    .breadcrumb li span {
+        font-size: 12px;
+    }
 }

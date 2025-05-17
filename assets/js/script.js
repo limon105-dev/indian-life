@@ -123,41 +123,32 @@ $(function () {
 // btn js ---
 
 // product-slider js start---
-var swiper = new Swiper(".product-slider-thumb", {
-	direction: 'vertical',
+var swiper = new Swiper(".single-product-slider-thumb", {
 	loop: true,
-	spaceBetween: 20,
+	spaceBetween: 16,
 	slidesPerView: 5,
-	freeMode: true,
-	mousewheel: true,
 	breakpoints: {
 		// when window width is >= 320px
 		1: {
-			direction: 'horizontal',
 			spaceBetween: 10,
 			slidesPerView: 4,
 		},
 		// when window width is >= 576px
 		576: {
-			direction: 'horizontal',
-			spaceBetween: 20,
+			spaceBetween: 10,
 			slidesPerView: 5,
 		},
-		// when window width is >= 767px
+		// when window width is >= 768px
 		768: {
-			direction: 'vertical',
-			spaceBetween: 20,
+			spaceBetween: 16,
 			slidesPerView: 5,
-		}
+		},
 	}
 });
-var swiper2 = new Swiper(".product-slider", {
+var swiper2 = new Swiper(".single-product-slider", {
 	loop: true,
+	autoHeight: true,
 	spaceBetween: 10,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
 	thumbs: {
 		swiper: swiper,
 	},
@@ -199,7 +190,7 @@ var swiper = new Swiper(".img-slider", {
 });
 // img-slider js end--
 
-// img-slider js start--
+// testimonial slider js start--
 var swiper = new Swiper(".testimonial-slider", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -210,4 +201,4 @@ var swiper = new Swiper(".testimonial-slider", {
 		clickable: true,
 	},
 });
-// img-slider js end--
+// testimonial slider js end--
