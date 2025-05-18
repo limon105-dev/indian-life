@@ -1,0 +1,87 @@
+/* newsletter section css start */
+.newsletter-section {
+    background-color: var(--brand-color);
+}
+
+.newsletter-wrapper {
+    max-width: 1062px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-content .section-heading-wrapper {
+    text-align: left;
+    margin: 0;
+    max-width: 492px;
+    width: 100%;
+}
+
+.newsletter-content .section-heading-wrapper .section-heading {
+    color: var(--white);
+}
+
+.newsletter-content .section-heading-wrapper .section-heading-text {
+    color: var(--white);
+    margin: 0;
+    max-width: 100%;
+}
+
+.newsletter-content .section-heading-wrapper .section-heading-sub-text {
+    color: var(--white);
+    margin: 0;
+    max-width: 100%;
+}
+
+.newsletter-input-field-area{
+    max-width: 496px;
+    width: 100%;
+}
+
+.newsletter-input-field{
+    display: flex;
+    gap: 16px;
+}
+
+.newsletter-input-field input {
+    width: 75%;
+    height: 48px;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.newsletter-input-field input::placeholder{
+    color: var(--white);
+}
+
+.newsletter-input-field .secondary-btn {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.newsletter-input-field .secondary-btn span{
+    background-color: var(--white);
+}
+
+.newsletter-input-field .secondary-btn:hover{
+    color: var(--paragraph-text-color);
+}
+
+.newsletter-input-field-text{
+    color: var(--white);
+    font-size: 12px;
+    margin: 16px 0 0 0;
+}
+
+.newsletter-input-field-text a{
+    color: var(--white);
+}
+
+.newsletter-input-field-text a:hover{
+    text-decoration: underline;
+}
+/* newsletter section css end */

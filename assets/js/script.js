@@ -53,23 +53,21 @@ $(document).ready(function () {
 	// navbar js end ---
 
 	// filter sidebar js start--
-	$(".filter-open-btn").click(function (event) {
-		event.stopPropagation();
-		$(".collection-filter").addClass('active');
-		$("body").toggleClass('active');
-	});
+	if (window.matchMedia("(min-width: 993px)").matches) {
+		$(".filter-btn").click(function (event) {
+			event.stopPropagation();
+			$(this).toggleClass('active');
+			$(".collection-filter-items").slideToggle();
+		});
+	}
 
-	$(".filter-window-close-btn").click(function (event) {
-		event.stopPropagation();
-		$(".collection-filter").removeClass('active');
-		$("body").toggleClass('active');
-	});
-
-	$(".filter-close-btn").click(function (event) {
-		event.stopPropagation();
-		$(".collection-filter").removeClass('active');
-		$("body").toggleClass('active');
-	});
+		if (window.matchMedia("(max-width: 992px)").matches) {
+		$(".filter-btn").click(function (event) {
+			event.stopPropagation();
+			$(this).toggleClass('active');
+			$(".collection-filter-middle").slideToggle();
+		});
+	}
 	// filter sidebar js end--
 
 })

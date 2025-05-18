@@ -1,0 +1,144 @@
+/* blog section css start */
+.common-banner-section.blog-common-banner {
+    background-color: var(--body-color);
+    height: 400px;
+}
+
+.blog-common-banner .common-banner-title {
+    color: var(--paragraph-text-color);
+}
+
+.blog-common-banner .common-banner-text {
+    color: var(--paragraph-text-color);
+}
+
+.section.blog-section {
+    padding-top: 0;
+}
+
+.blog-section .filter-links {
+    padding: 0 0 64px 0;
+}
+
+.filter-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-links a {
+    padding: 12px 16px;
+    line-height: 1;
+    color: var(--paragraph-text-color);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 16px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.filter-links a:hover {
+    color: var(--white);
+    background-color: var(--brand-color);
+}
+
+.filter-links a.active {
+    color: var(--white);
+    background-color: var(--brand-color);
+}
+
+.blog-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 64px;
+    column-gap: 32px;
+}
+
+.blog-item-content {
+    margin: 24px 0 0 0;
+}
+
+.blog-item-img {
+    height: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.blog-item-img img {
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.blog-item-img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.blog-item-sub-title {
+    margin: 0 0 16px 0;
+}
+
+.blog-item-title {
+    letter-spacing: -1px;
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.blog-item-title:hover {
+    text-decoration: underline;
+}
+
+.blog-item-text {
+    margin: 16px 0 0 0;
+    letter-spacing: -0.3px;
+}
+
+.blog-author-wrapper{
+    margin: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-author-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    overflow: hidden;
+}
+
+.author-name{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.blog-date-time{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.blog-date-time .blog-date,
+.blog-date-time .dot,
+.blog-date-time .blog-time{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* blog section css end */
