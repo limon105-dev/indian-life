@@ -1,5 +1,5 @@
 /* img-slider section css start */
-.section.img-slider-section {
+.section.img-slider-section.home-img-slider-section {
     padding-top: 0;
 }
 
@@ -117,6 +117,10 @@
         height: 1px;
         background-color: var(--border-color);
         display: block;
+    }
+
+    .img-slider-item .overlay .overlay-content .overlay-title {
+        font-size: 18px;
     }
 
     .img-slider-item .overlay .overlay-content .overlay-btn {

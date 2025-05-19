@@ -105,7 +105,7 @@
     letter-spacing: -0.3px;
 }
 
-.blog-author-wrapper{
+.blog-author-wrapper {
     margin: 24px 0 0 0;
     display: flex;
     align-items: center;
@@ -123,12 +123,12 @@
     overflow: hidden;
 }
 
-.author-name{
+.author-name {
     font-size: 14px;
     font-weight: 600;
 }
 
-.blog-date-time{
+.blog-date-time {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -136,9 +136,127 @@
 
 .blog-date-time .blog-date,
 .blog-date-time .dot,
-.blog-date-time .blog-time{
+.blog-date-time .blog-time {
     font-size: 14px;
     font-weight: 400;
 }
 
 /* blog section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* blog section css start */
+    .blog-items {
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+
+    .blog-item-img {
+        height: auto;
+    }
+
+    /* blog section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* blog section css start */
+    .common-banner-section.blog-common-banner {
+        height: 300px;
+    }
+
+    .blog-section .filter-links {
+        padding: 0 0 30px 0;
+    }
+
+    .blog-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-item-content {
+        margin: 10px 0 0 0;
+    }
+
+    .blog-item-sub-title {
+        margin: 0 0 10px 0;
+    }
+
+    .blog-item-title {
+        font-size: 22px;
+    }
+
+    .blog-item-text {
+        margin: 5px 0 0 0;
+    }
+
+    .blog-author-wrapper {
+        margin: 12px 0 0 0;
+        gap: 10px;
+    }
+
+    .blog-author-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .author-name {
+        font-size: 12px;
+    }
+
+    .blog-date-time {
+        gap: 5px;
+    }
+
+    .blog-date-time .blog-date,
+    .blog-date-time .dot,
+    .blog-date-time .blog-time {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    /* blog section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* blog section css start */
+    .common-banner-section.blog-common-banner {
+        height: 250px;
+    }
+
+    .filter-links a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .blog-items {
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+
+    .blog-item-sub-title {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+    }
+
+    .blog-item-title {
+        font-size: 18px;
+    }
+
+    .blog-item-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .blog-author-wrapper {
+        margin: 8px 0 0 0;
+        gap: 5px;
+    }
+
+    .blog-date-time {
+        gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    /* blog section css end */
+}

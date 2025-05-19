@@ -36,12 +36,12 @@
     max-width: 100%;
 }
 
-.newsletter-input-field-area{
+.newsletter-input-field-area {
     max-width: 496px;
     width: 100%;
 }
 
-.newsletter-input-field{
+.newsletter-input-field {
     display: flex;
     gap: 16px;
 }
@@ -53,7 +53,7 @@
     border-bottom: 1px solid var(--white);
 }
 
-.newsletter-input-field input::placeholder{
+.newsletter-input-field input::placeholder {
     color: var(--white);
 }
 
@@ -63,25 +63,71 @@
     border-color: var(--white);
 }
 
-.newsletter-input-field .secondary-btn span{
+.newsletter-input-field .secondary-btn span {
     background-color: var(--white);
 }
 
-.newsletter-input-field .secondary-btn:hover{
+.newsletter-input-field .secondary-btn:hover {
     color: var(--paragraph-text-color);
 }
 
-.newsletter-input-field-text{
+.newsletter-input-field-text {
     color: var(--white);
     font-size: 12px;
     margin: 16px 0 0 0;
 }
 
-.newsletter-input-field-text a{
+.newsletter-input-field-text a {
     color: var(--white);
 }
 
-.newsletter-input-field-text a:hover{
+.newsletter-input-field-text a:hover {
     text-decoration: underline;
 }
+
 /* newsletter section css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* newsletter section css start */
+    .newsletter-wrapper {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .newsletter-content .section-heading-wrapper {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .newsletter-input-field-area {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* newsletter section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* newsletter section css start */
+    .newsletter-wrapper {
+        gap: 20px;
+    }
+
+    .newsletter-input-field {
+        flex-wrap: wrap;
+    }
+
+    .newsletter-input-field input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .newsletter-input-field .secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* newsletter section css end */
+}

@@ -763,10 +763,15 @@ button {
     fill: var(--brand-color);
 }
 
+.nav-icons.mabile-nav-icons {
+    display: none;
+}
+
 .nav-icons ul {
     display: flex;
     gap: 17px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-icons ul li a {
@@ -775,18 +780,14 @@ button {
     cursor: pointer;
 }
 
-.nav-icons ul li a:hover,
+/* .nav-icons ul li a:hover,
 .nav-icons ul li span:hover {
-    background-color: var(--white);
-}
+    background-color: var(--brand-color);
+} */
 
-.nav-icons ul li a:hover i,
-.nav-icons ul li span:hover i {
-    color: var(--brand-color);
-}
-
-.nav-icons.mabile-nav-icons {
-    display: none;
+.nav-icons ul li a:hover svg path,
+.nav-icons ul li span:hover svg path {
+    fill: var(--brand-color);
 }
 
 /* navbar section css end */
@@ -1091,6 +1092,10 @@ button {
         width: 100%;
         z-index: 1;
         background-color: var(--black);
+    }
+
+    .nav-icons {
+        display: flex;
     }
 
     .megamenu-wrapper {
