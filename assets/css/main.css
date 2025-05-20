@@ -453,7 +453,7 @@ button {
     right: 0;
     transition: ease .3s;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .navbar-color.color-black {
@@ -601,23 +601,7 @@ button {
 }
 
 .sub-menu {
-    position: absolute;
-    left: 0;
-    top: 54px;
-    padding: 20px;
-    background-color: var(--brand-color);
-    opacity: 0;
-    visibility: hidden;
-    transition: ease .3s;
-    width: 200px;
-    z-index: 2;
     display: none;
-}
-
-.nav-links ul li:hover .sub-menu {
-    opacity: 1;
-    visibility: visible;
-    top: 40px;
 }
 
 .sub-menu ul li a {
@@ -640,7 +624,7 @@ button {
 
 .megamenu-wrapper {
     position: fixed;
-    z-index: 9;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100vw;
@@ -779,11 +763,6 @@ button {
     transition: ease .3s;
     cursor: pointer;
 }
-
-/* .nav-icons ul li a:hover,
-.nav-icons ul li span:hover {
-    background-color: var(--brand-color);
-} */
 
 .nav-icons ul li a:hover svg path,
 .nav-icons ul li span:hover svg path {
@@ -1043,14 +1022,8 @@ button {
     }
 
     .sub-menu {
-        position: unset;
         padding: 0 0 0 16px;
-        background-color: transparent;
-        opacity: 1;
-        visibility: visible;
-        transition: unset;
         width: 100%;
-        display: none;
     }
 
     .sub-menu ul {
