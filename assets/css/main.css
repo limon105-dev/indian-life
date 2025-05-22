@@ -547,6 +547,10 @@ button {
     gap: 48px;
 }
 
+.nav-links.mobile-nav-links {
+    display: none;
+}
+
 .sub-menu ul {
     flex-direction: column;
     gap: 0;
@@ -954,9 +958,15 @@ button {
         transform: translateX(0);
     }
 
-    .nav-links {
+    .nav-links.mobile-nav-links {
+        display: block;
         overflow-y: auto;
         height: calc(100% - 121px);
+    }
+
+
+    .nav-links {
+        display: none;
     }
 
     .nav-links-right {
