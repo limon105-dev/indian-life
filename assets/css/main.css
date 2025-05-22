@@ -1028,19 +1028,14 @@ button {
         border: none;
     }
 
-    .nav-links ul li::after {
-        display: none;
-    }
-
-    .sub-menu ul li::after {
-        bottom: 5px;
-        display: block;
+    .sub-menu ul li a::after {
+        bottom: 0;
         height: 1px;
-        background-color: var(--white);
+        display: block !important;
     }
 
-    .sub-menu ul li:last-child::after {
-        bottom: 10px;
+    .nav-links ul li a::after {
+        display: none;
     }
 
     .sub-menu {
