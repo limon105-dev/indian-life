@@ -1032,6 +1032,8 @@ button {
         bottom: 0;
         height: 1px;
         display: block !important;
+        width: 100%;
+        opacity: 0.5;
     }
 
     .nav-links ul li a::after {
