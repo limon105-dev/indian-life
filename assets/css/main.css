@@ -611,6 +611,20 @@ button {
     width: 100%;
 }
 
+.nav-links ul li .megamenu-btn svg,
+.nav-links ul li .dropdown-btn svg {
+    transition: ease .3s;
+    margin-left: 12px;
+}
+
+.nav-links .dropdown-btn.active span svg {
+    transform: rotate(-180deg);
+}
+
+.nav-links ul li:hover .megamenu-btn .icon svg {
+    transform: rotate(-180deg);
+}
+
 .sub-menu {
     display: none;
 }
