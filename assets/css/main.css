@@ -566,9 +566,13 @@ button {
     font-family: var(--paragraph-font);
     text-transform: capitalize;
     cursor: pointer;
-    /* padding: 36.5px 0 35.5px; */
     text-decoration: none;
     user-select: none;
+}
+
+.nav-links ul li a,
+.nav-links ul li .megamenu-btn {
+    padding: 36.5px 0 35.5px;
 }
 
 .nav-links .megamenu-btn svg {
@@ -581,16 +585,18 @@ button {
 }
 
 .sub-menu ul li a,
-.nav-links ul li {
+.nav-links ul li a,
+.nav-links ul li .megamenu-btn {
     position: relative;
 }
 
-.sub-menu ul li::after,
-.nav-links ul li::after {
+.sub-menu ul li a::after,
+.nav-links ul li a::after,
+.nav-links ul li .megamenu-btn::after {
     content: "";
     position: absolute;
     right: 0px;
-    bottom: -5px;
+    bottom: 30px;
     width: 0;
     height: 2px;
     background-color: var(--white);
@@ -598,8 +604,9 @@ button {
     transition: ease .3s;
 }
 
-.sub-menu ul li:hover::after,
-.nav-links ul li:hover::after {
+.sub-menu ul li a:hover::after,
+.nav-links ul li a:hover::after,
+.nav-links ul li .megamenu-btn:hover::after {
     left: 0px;
     width: 100%;
 }
@@ -628,8 +635,8 @@ button {
 
 .megamenu-wrapper {
     position: fixed;
-    z-index: 99;
-    top: 0;
+    z-index: -1;
+    top: 0px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -643,7 +650,7 @@ button {
     -o-transition: all ease .3s;
 }
 
-.megamenu-wrapper.active {
+.nav-links ul li:hover .megamenu-wrapper {
     opacity: 1;
     visibility: visible;
     transition: all ease .3s;
@@ -666,18 +673,22 @@ button {
     width: 100%;
 }
 
+.megamenu-link {
+    display: unset !important;
+}
+
 .megamenu-link li a {
-    color: var(--white);
-    font-family: var(--heading-font);
-    font-weight: 400;
-    font-size: 40px;
-    text-transform: capitalize;
-    padding: 0 0 16px 0;
+    color: var(--white) !important;
+    font-family: var(--heading-font) !important;
+    font-weight: 400 !IMPORTANT;
+    font-size: 40px !important;
+    text-transform: capitalize !important;
+    padding: 0 0 16px 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    position: relative;
+    position: relative !important;
 }
 
 .megamenu-link li a .icon {
@@ -699,23 +710,24 @@ button {
 }
 
 .megamenu-link li a::after {
-    position: absolute;
-    content: "";
-    bottom: 5px;
-    right: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--white);
-    transition: all ease .3s;
+    position: absolute !important;
+    content: "" !important;
+    bottom: 5px !important;
+    right: 0 !important;
+    width: 0 !important;
+    height: 1px !important;
+    background-color: var(--white) !important;
+    transition: all ease .3s !important;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
     -ms-transition: all ease .3s;
     -o-transition: all ease .3s;
+    z-index: 9 !important;
 }
 
 .megamenu-link li a:hover:after {
-    left: 0;
-    width: 100%;
+    left: 0 !important;
+    width: 100% !important;
 }
 
 .megamenu-footer {

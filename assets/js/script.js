@@ -26,16 +26,6 @@ $(document).ready(function () {
 		$("body").toggleClass("active");
 	});
 
-	// megamenu js start...
-	if (window.matchMedia("(min-width: 993px)").matches) {
-		$(".megamenu-btn").click(function (event) {
-			event.stopPropagation();
-			$(this).toggleClass('active');
-			$(".megamenu-wrapper").toggleClass('active');
-		});
-	}
-	// megamenu js end...
-
 	// mobile-dropdown responsive accordion js start--
 	$(function () {
 		let isMobile = window.matchMedia("only screen and (max-width: 992px)").matches;
